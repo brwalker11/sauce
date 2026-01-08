@@ -3,22 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montañero</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: sans-serif;
-        }
-    </style>
+    <meta name="description" content="Montañero Hot Sauce - Born in Breckenridge, CO. From the mountains. For the people.">
+    <meta name="keywords" content="hot sauce, Colorado, Breckenridge, artisan, craft hot sauce, Montañero">
+    <meta name="author" content="Montañero">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://montanerosauce.com/">
+    <meta property="og:title" content="Montañero Hot Sauce">
+    <meta property="og:description" content="From the mountains. For the people. 25 years of heat, finally bottled.">
+    <meta property="og:image" content="https://montanerosauce.com/assets/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Montañero Hot Sauce">
+    <meta name="twitter:description" content="From the mountains. For the people. 25 years of heat, finally bottled.">
+    <meta name="twitter:image" content="https://montanerosauce.com/assets/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Montañero Hot Sauce | From the Mountains. For the People.</title>
 </head>
 <body>
-    <h1>Coming Soon</h1>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/logo.png" alt="Montañero" class="nav-logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="#story" class="nav-link">Story</a>
+                <a href="#sauces" class="nav-link">Sauces</a>
+                <a href="#find-us" class="nav-link">Find Us</a>
+                <a href="https://instagram.com/montanerosauce" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="nav-mobile" id="nav-mobile">
+            <a href="#story" class="nav-mobile-link">Story</a>
+            <a href="#sauces" class="nav-mobile-link">Sauces</a>
+            <a href="#find-us" class="nav-mobile-link">Find Us</a>
+            <a href="https://instagram.com/montanerosauce" target="_blank" rel="noopener noreferrer" class="nav-mobile-link">Instagram</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-logo animate-fade-in">
+                <img src="assets/logo.png" alt="Montañero - Yeti skiing with hot sauce" class="hero-logo-img">
+            </div>
+            <h1 class="hero-tagline animate-fade-in-delay">From the mountains. For the people.</h1>
+        </div>
+        <a href="#story" class="hero-scroll" aria-label="Scroll down">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <!-- Decorative snow particles -->
+        <div class="snow-container" aria-hidden="true">
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content reveal">
+                    <h2 class="section-title">The Legend</h2>
+                    <div class="story-text">
+                        <p>In 1996, Lee Walker, a Culinary Institute of America grad, opened Angels Hollow in Breckenridge. For 25 years, every table had a bottle of his hot sauce. Guests didn't just ask for more. They asked to take it home.</p>
+                        <p>The restaurant sold in 2020. The sauce didn't.</p>
+                        <p><strong>Montañero is that sauce, finally bottled and ready for yours.</strong></p>
+                    </div>
+                </div>
+                <div class="story-image reveal reveal-delay">
+                    <div class="image-placeholder">
+                        <span>Photo coming soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sauces Section -->
+    <section class="sauces" id="sauces">
+        <div class="container">
+            <h2 class="section-title section-title-center reveal">The Lineup</h2>
+            <div class="sauces-grid">
+                <!-- Red -->
+                <div class="sauce-card sauce-card-red reveal">
+                    <div class="sauce-image">
+                        <div class="image-placeholder sauce-placeholder-red">
+                            <span>Bottle photo coming soon</span>
+                        </div>
+                    </div>
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Red</h3>
+                        <p class="sauce-description">Smoky. Bold. Deep, slow-building heat with rich, roasted depth. The one that started it all.</p>
+                    </div>
+                </div>
+
+                <!-- Banana Habanero -->
+                <div class="sauce-card sauce-card-banana reveal reveal-delay-1">
+                    <div class="sauce-image">
+                        <div class="image-placeholder sauce-placeholder-banana">
+                            <span>Bottle photo coming soon</span>
+                        </div>
+                    </div>
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Banana Habanero</h3>
+                        <p class="sauce-description">Sweet heat with tropical warmth and a hint of spice you can't quite place. The one people remember.</p>
+                    </div>
+                </div>
+
+                <!-- Blueberry -->
+                <div class="sauce-card sauce-card-blueberry reveal reveal-delay-2">
+                    <div class="sauce-image">
+                        <div class="image-placeholder sauce-placeholder-blueberry">
+                            <span>Bottle photo coming soon</span>
+                        </div>
+                    </div>
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Blueberry</h3>
+                        <p class="sauce-description">Fresh berry sweetness up front, slow chili burn on the way out. Unexpected. Unforgettable.</p>
+                    </div>
+                </div>
+
+                <!-- Green Verde -->
+                <div class="sauce-card sauce-card-verde reveal reveal-delay-3">
+                    <div class="sauce-image">
+                        <div class="image-placeholder sauce-placeholder-verde">
+                            <span>Bottle photo coming soon</span>
+                        </div>
+                    </div>
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Green Verde</h3>
+                        <p class="sauce-description">Bright, fresh, and herbal. Classic green heat with layers of flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Us Section -->
+    <section class="find-us" id="find-us">
+        <div class="container">
+            <h2 class="section-title section-title-center reveal">Find Us</h2>
+
+            <div class="find-us-grid">
+                <!-- Markets -->
+                <div class="find-us-markets reveal">
+                    <h3 class="find-us-subtitle">Market Schedule</h3>
+                    <div class="market-list">
+                        <div class="market-item">
+                            <span class="market-name">Breckenridge Farmers Market</span>
+                            <span class="market-day">Thursdays</span>
+                        </div>
+                        <div class="market-item">
+                            <span class="market-name">Dillon Farmers Market</span>
+                            <span class="market-day">Fridays</span>
+                        </div>
+                    </div>
+                    <p class="market-note">Starting June 2025</p>
+                </div>
+
+                <!-- Email Signup -->
+                <div class="find-us-signup reveal reveal-delay">
+                    <h3 class="find-us-subtitle">Be first to know when we ship nationwide</h3>
+                    <form class="signup-form" id="signup-form">
+                        <div class="signup-input-group">
+                            <input
+                                type="email"
+                                class="signup-input"
+                                placeholder="Enter your email"
+                                aria-label="Email address"
+                                required
+                            >
+                            <button type="submit" class="signup-button">
+                                Notify Me
+                            </button>
+                        </div>
+                        <p class="signup-message" id="signup-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Montañero" class="footer-logo-img">
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/montanerosauce" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/@montanerosauce" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="TikTok">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.04-.1z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Montañero</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>

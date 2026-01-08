@@ -3,43 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Montañero Hot Sauce - Born in Breckenridge, CO. From the mountains. For the people.">
-    <meta name="keywords" content="hot sauce, Colorado, Breckenridge, artisan, craft hot sauce, Montañero">
-    <meta name="author" content="Montañero">
 
-    <!-- Open Graph / Social -->
+    <!-- Primary Meta Tags -->
+    <title>Montañero | Hot Sauce From the Mountains</title>
+    <meta name="title" content="Montañero | Hot Sauce From the Mountains">
+    <meta name="description" content="Born from 25 years at Angels Hollow in Breckenridge, Colorado. Four handcrafted hot sauces finally bottled and ready for your table. Find us at local farmers markets.">
+    <meta name="keywords" content="hot sauce, Montañero, Breckenridge, Colorado, craft hot sauce, small batch, Angels Hollow, farmers market, habanero, verde, artisan">
+    <meta name="author" content="Montañero">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://montanerosauce.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <meta name="theme-color" content="#4BB8E4">
+    <meta name="msapplication-TileColor" content="#4BB8E4">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://montanerosauce.com/">
-    <meta property="og:title" content="Montañero Hot Sauce">
-    <meta property="og:description" content="From the mountains. For the people. 25 years of heat, finally bottled.">
-    <meta property="og:image" content="https://montanerosauce.com/assets/logo.png">
+    <meta property="og:title" content="Montañero | Hot Sauce From the Mountains">
+    <meta property="og:description" content="Born from 25 years at Angels Hollow in Breckenridge, Colorado. Four handcrafted hot sauces finally bottled and ready for your table.">
+    <meta property="og:image" content="https://montanerosauce.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Montañero">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Montañero Hot Sauce">
-    <meta name="twitter:description" content="From the mountains. For the people. 25 years of heat, finally bottled.">
-    <meta name="twitter:image" content="https://montanerosauce.com/assets/logo.png">
+    <meta name="twitter:url" content="https://montanerosauce.com/">
+    <meta name="twitter:title" content="Montañero | Hot Sauce From the Mountains">
+    <meta name="twitter:description" content="Born from 25 years at Angels Hollow in Breckenridge, Colorado. Four handcrafted hot sauces finally bottled and ready for your table.">
+    <meta name="twitter:image" content="https://montanerosauce.com/assets/og-image.png">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <!-- Additional SEO -->
+    <meta name="geo.region" content="US-CO">
+    <meta name="geo.placename" content="Breckenridge">
 
-    <!-- Google Fonts -->
+    <!-- Preload & Preconnect -->
+    <link rel="preload" as="image" href="/assets/logo-800.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <title>Montañero Hot Sauce | From the Mountains. For the People.</title>
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
     <!-- Navigation -->
+    <header>
     <nav class="nav" id="nav">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <img src="assets/logo.png" alt="Montañero" class="nav-logo-img">
+            <a href="/" class="nav-logo">
+                <img src="/assets/logo-400.webp" alt="Montañero - Hot Sauce From the Mountains" width="50" height="50" class="nav-logo-img">
             </a>
             <div class="nav-links">
                 <a href="#story" class="nav-link">Story</a>
@@ -65,12 +90,20 @@
             <a href="https://instagram.com/montanerosauce" target="_blank" rel="noopener noreferrer" class="nav-mobile-link">Instagram</a>
         </div>
     </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" aria-label="Welcome">
         <div class="hero-content">
             <div class="hero-logo animate-fade-in">
-                <img src="assets/logo.png" alt="Montañero - Yeti skiing with hot sauce" class="hero-logo-img">
+                <picture>
+                    <source srcset="/assets/logo-800.webp" media="(max-width: 768px)">
+                    <source srcset="/assets/logo.webp" media="(min-width: 769px)">
+                    <img src="/assets/logo-800.webp" alt="Montañero Yeti Mascot - Hot Sauce From the Mountains" width="800" height="800" class="hero-logo-img" loading="eager" fetchpriority="high">
+                </picture>
             </div>
             <h1 class="hero-tagline animate-fade-in-delay">From the mountains. For the people.</h1>
         </div>
@@ -95,7 +128,7 @@
     </section>
 
     <!-- Story Section -->
-    <section class="story" id="story">
+    <section class="story" id="story" aria-label="Our Story">
         <div class="container">
             <div class="story-grid">
                 <div class="story-content reveal">
@@ -116,7 +149,7 @@
     </section>
 
     <!-- Sauces Section -->
-    <section class="sauces" id="sauces">
+    <section class="sauces" id="sauces" aria-label="Our Hot Sauces">
         <div class="container">
             <h2 class="section-title section-title-center reveal">The Lineup</h2>
             <div class="sauces-grid">
@@ -176,7 +209,7 @@
     </section>
 
     <!-- Find Us Section -->
-    <section class="find-us" id="find-us">
+    <section class="find-us" id="find-us" aria-label="Find Us at Farmers Markets">
         <div class="container">
             <h2 class="section-title section-title-center reveal">Find Us</h2>
 
@@ -202,30 +235,33 @@
                     <h3 class="find-us-subtitle">Be first to know when we ship nationwide</h3>
                     <form class="signup-form" id="signup-form">
                         <div class="signup-input-group">
+                            <label for="email-signup" class="visually-hidden">Email address</label>
                             <input
                                 type="email"
+                                id="email-signup"
                                 class="signup-input"
                                 placeholder="Enter your email"
-                                aria-label="Email address"
                                 required
                             >
                             <button type="submit" class="signup-button">
                                 Notify Me
                             </button>
                         </div>
-                        <p class="signup-message" id="signup-message"></p>
+                        <p class="signup-message" id="signup-message" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/logo.png" alt="Montañero" class="footer-logo-img">
+                    <img src="/assets/logo-400.webp" alt="Montañero" width="80" height="80" class="footer-logo-img" loading="lazy">
                 </div>
                 <div class="footer-social">
                     <a href="https://instagram.com/montanerosauce" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
@@ -246,5 +282,84 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Montañero",
+        "url": "https://montanerosauce.com",
+        "logo": "https://montanerosauce.com/assets/logo-800.webp",
+        "description": "Handcrafted hot sauces born from 25 years at Angels Hollow restaurant in Breckenridge, Colorado.",
+        "foundingDate": "1996",
+        "founder": {
+            "@type": "Person",
+            "name": "Lee Walker"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Breckenridge",
+            "addressRegion": "CO",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://instagram.com/montanerosauce",
+            "https://tiktok.com/@montanerosauce"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Montañero Hot Sauce Collection",
+        "description": "Four handcrafted hot sauces: Red, Banana Habanero, Blueberry, and Green Verde.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Montañero"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "availability": "https://schema.org/InStock",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Montañero",
+        "description": "Handcrafted hot sauces from Breckenridge, Colorado. Find us at local farmers markets.",
+        "url": "https://montanerosauce.com",
+        "image": "https://montanerosauce.com/assets/logo-800.webp",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Breckenridge",
+            "addressRegion": "CO",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.4817,
+            "longitude": -106.0384
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Thursday",
+                "name": "Breckenridge Farmers Market"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Friday",
+                "name": "Dillon Farmers Market"
+            }
+        ]
+    }
+    </script>
 </body>
 </html>

@@ -851,7 +851,8 @@ strong {
 /* --------------------------------------------------------------------------
    Utility Classes
    -------------------------------------------------------------------------- */
-.sr-only {
+.sr-only,
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -861,6 +862,25 @@ strong {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* Skip link - visible on focus for keyboard navigation */
+.skip-link:focus {
+    position: fixed;
+    top: var(--space-sm);
+    left: var(--space-sm);
+    width: auto;
+    height: auto;
+    padding: var(--space-sm) var(--space-md);
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    z-index: 10000;
+    text-decoration: none;
 }
 
 /* --------------------------------------------------------------------------

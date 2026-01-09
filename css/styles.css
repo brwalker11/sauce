@@ -181,13 +181,13 @@ strong {
 }
 
 .nav-logo-img {
-    height: 48px;
+    height: 80px;
     width: auto;
     transition: height var(--transition-normal);
 }
 
 .nav.scrolled .nav-logo-img {
-    height: 40px;
+    height: 60px;
 }
 
 .nav-links {
@@ -864,24 +864,6 @@ strong {
     border: 0;
 }
 
-/* Skip link - visible on focus for keyboard navigation */
-.skip-link:focus {
-    position: fixed;
-    top: var(--space-sm);
-    left: var(--space-sm);
-    width: auto;
-    height: auto;
-    padding: var(--space-sm) var(--space-md);
-    margin: 0;
-    overflow: visible;
-    clip: auto;
-    background-color: var(--color-dark);
-    color: var(--color-white);
-    font-weight: 600;
-    border-radius: var(--radius-md);
-    z-index: 10000;
-    text-decoration: none;
-}
 
 /* --------------------------------------------------------------------------
    Reduced Motion

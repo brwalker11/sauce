@@ -890,3 +890,165 @@ strong {
         display: none;
     }
 }
+
+/* --------------------------------------------------------------------------
+   Page Hero (for internal pages like Contact, Thank You)
+   -------------------------------------------------------------------------- */
+.page-hero {
+    padding: calc(100px + var(--space-3xl)) 0 var(--space-3xl);
+    background: linear-gradient(180deg, var(--color-sky-light) 0%, var(--color-sky) 100%);
+    text-align: center;
+}
+
+.page-hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-hero-title {
+    color: var(--color-white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: var(--space-sm);
+}
+
+.page-hero-subtitle {
+    color: var(--color-white);
+    font-size: 1.25rem;
+    font-weight: 400;
+    opacity: 0.9;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   Contact Form
+   -------------------------------------------------------------------------- */
+.contact-section {
+    padding: var(--space-3xl) 0;
+    background-color: var(--color-white);
+}
+
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--color-dark);
+}
+
+.form-input,
+.form-textarea {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    border: 2px solid var(--color-gray-light);
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    transition: border-color var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--color-sky);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--color-gray);
+}
+
+.form-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-button {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    align-self: flex-start;
+}
+
+.form-button:hover {
+    background-color: var(--color-red-dark);
+    transform: translateY(-2px);
+}
+
+.form-button:active {
+    transform: translateY(0);
+}
+
+.form-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.form-message {
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    font-size: 0.9375rem;
+}
+
+.form-message.error {
+    background-color: rgba(230, 51, 41, 0.1);
+    color: var(--color-red);
+}
+
+.form-message.success {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+/* --------------------------------------------------------------------------
+   Thank You Page CTA
+   -------------------------------------------------------------------------- */
+.thank-you-section {
+    padding: var(--space-3xl) 0;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.thank-you-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.cta-button:hover {
+    background-color: var(--color-red-dark);
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}

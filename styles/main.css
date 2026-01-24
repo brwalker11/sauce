@@ -1,11 +1,11 @@
 /**
  * Montañero Hot Sauce - Main Stylesheet
  * Brand Colors:
- * - Deep Blue: #1a365d
- * - Orange/Red: #c53030
- * - Warm Orange: #dd6b20
- * - Background: #fafafa
- * - Text: #1a1a1a
+ * - Sky Blue: #4BB8E4 (background, accents)
+ * - White: #FFFFFF
+ * - Red: #E63329 (accents, CTAs)
+ * - Orange/Yellow: #F7941D (flame accents)
+ * - Dark: #1A1A1A (text)
  */
 
 /* ========================================
@@ -133,7 +133,7 @@ p {
 }
 
 .nav-link:hover {
-    color: #c53030;
+    color: #E63329;
 }
 
 .nav-social {
@@ -144,7 +144,7 @@ p {
 }
 
 .nav-social:hover {
-    color: #c53030;
+    color: #E63329;
 }
 
 /* Mobile Menu Toggle */
@@ -209,7 +209,7 @@ p {
 }
 
 .nav-mobile-link:hover {
-    color: #c53030;
+    color: #E63329;
 }
 
 /* Desktop Navigation */
@@ -264,7 +264,7 @@ p {
 .hero-tagline {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1a365d;
+    color: #4BB8E4;
     margin: 0;
     letter-spacing: -0.02em;
 }
@@ -274,7 +274,7 @@ p {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    color: #1a365d;
+    color: #F7941D;
     animation: bounce 2s infinite;
     z-index: 1;
 }
@@ -402,7 +402,7 @@ p {
 .section-title {
     font-size: 2rem;
     font-weight: 900;
-    color: #1a365d;
+    color: #4BB8E4;
     margin-bottom: 30px;
     letter-spacing: -0.02em;
 }
@@ -512,6 +512,23 @@ p {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
+/* Sauce card color accents */
+.sauce-card-red {
+    border-top: 4px solid #E63329;
+}
+
+.sauce-card-banana {
+    border-top: 4px solid #F7941D;
+}
+
+.sauce-card-blueberry {
+    border-top: 4px solid #8B5CF6;
+}
+
+.sauce-card-verde {
+    border-top: 4px solid #22C55E;
+}
+
 .sauce-image {
     display: flex;
     align-items: center;
@@ -553,7 +570,7 @@ p {
 .sauce-name {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1a365d;
+    color: #4BB8E4;
     margin-bottom: 10px;
 }
 
@@ -593,7 +610,7 @@ p {
 .find-us-subtitle {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1a365d;
+    color: #4BB8E4;
     margin-bottom: 20px;
 }
 
@@ -620,7 +637,7 @@ p {
 }
 
 .market-day {
-    color: #c53030;
+    color: #E63329;
     font-weight: 500;
 }
 
@@ -652,7 +669,7 @@ p {
 }
 
 .signup-input:focus {
-    border-color: #c53030;
+    border-color: #E63329;
 }
 
 .signup-input::placeholder {
@@ -664,14 +681,14 @@ p {
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
-    background-color: #c53030;
+    background-color: #E63329;
     border: none;
     border-radius: 8px;
     transition: background-color 0.2s ease;
 }
 
 .signup-button:hover {
-    background-color: #a52828;
+    background-color: #C42B22;
 }
 
 .signup-button:disabled {
@@ -690,7 +707,7 @@ p {
 }
 
 .signup-message.error {
-    color: #c53030;
+    color: #E63329;
 }
 
 @media (min-width: 768px) {
@@ -727,7 +744,7 @@ p {
 
 .footer {
     padding: 40px 0;
-    background-color: #1a365d;
+    background-color: #4BB8E4;
     color: #fff;
 }
 

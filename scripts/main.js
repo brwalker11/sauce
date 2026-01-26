@@ -184,16 +184,18 @@
 
     /**
      * Email signup form handling
-     * Note: This is a visual-only implementation. Backend integration needed.
+     * Submits to Formspree for email collection
      */
     function setupSignupForm() {
         if (!signupForm) return;
 
+        var FORMSPREE_ENDPOINT = 'https://formspree.io/f/xeegzwzw';
+
         signupForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const emailInput = signupForm.querySelector('.signup-input');
-            const email = emailInput.value.trim();
+            var emailInput = signupForm.querySelector('.signup-input');
+            var email = emailInput.value.trim();
 
             // Basic email validation
             if (!isValidEmail(email)) {
@@ -201,21 +203,39 @@
                 return;
             }
 
-            // Simulate form submission
-            // In production, this would send to a backend/email service
-            const button = signupForm.querySelector('.signup-button');
-            const originalText = button.textContent;
+            var button = signupForm.querySelector('.signup-button');
+            var originalText = button.textContent;
 
-            button.textContent = 'Sending...';
+            // Show loading state
+            button.textContent = 'Signing up...';
             button.disabled = true;
 
-            // Simulate network delay
-            setTimeout(function() {
-                showMessage('Thanks! We\'ll be in touch soon.', 'success');
+            // Submit to Formspree
+            fetch(FORMSPREE_ENDPOINT, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({ email: email })
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok');
+            })
+            .then(function() {
+                showMessage("You're on the list!", 'success');
                 emailInput.value = '';
+            })
+            .catch(function() {
+                showMessage('Something went wrong. Please try again.', 'error');
+            })
+            .finally(function() {
                 button.textContent = originalText;
                 button.disabled = false;
-            }, 1000);
+            });
         });
     }
 
